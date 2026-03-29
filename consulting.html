@@ -3,40 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compliance consultancy: SOC 2, ISO 27001, GDPR, and audit readiness at Cybersecurity Academy.">
     <link rel="stylesheet" href="style.css">
-    <title>Compliance Consultancy</title>
+    <title>Compliance Consultancy | Cybersecurity Academy</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__content">
-            <a href="index.html" class="logo">
-                <img class="logo__image" src="images/logo.webp" alt="logo">
-            </a>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-            <nav class="nav">
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo">
+                <img class="logo__image" src="images/logo.webp" alt="Cybersecurity Academy">
+            </a>
+            <nav class="nav" aria-label="Primary">
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="services.html" class="nav__link">Services</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="education.html" class="nav__link">Education</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="products.html" class="nav__link">Products</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="btn">Contact</a>
-                    </li>
-                </ul>    
+                    <li><a href="services.html" class="nav__link">Services</a></li>
+                    <li><a href="education.html" class="nav__link">Education</a></li>
+                    <li><a href="products.html" class="nav__link">Products</a></li>
+                    <li><a href="consulting.html" class="nav__link" aria-current="page">Consulting</a></li>
+                    <li><a href="services.html#contact" class="btn">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <h1>Compliance Consultancy</h1>
+    <main id="main" class="site-main site-main--narrow">
+        <header class="section-head">
+            <p class="section-label">Governance &amp; assurance</p>
+            <h1>Compliance consultancy</h1>
+            <p>We help organizations align security practices with industry frameworks and regulations—so controls are defensible under audit and useful day to day.</p>
+        </header>
 
-    <p>We help organizations align their security practices with industry frameworks and regulations. Whether you're preparing for an audit, implementing controls, or building a compliance program, we provide practical guidance and support.</p>
+        <div class="prose">
+            <p>Whether you are preparing for an assessment, implementing a control baseline, or maturing a compliance program, we provide structured guidance and hands-on support. Our consultants bridge the gap between policy language and operational reality.</p>
+            <h2>Frameworks we support</h2>
+            <p>Common engagements include SOC 2 (Trust Services Criteria), ISO 27001, GDPR-aligned privacy programs, and sector-specific requirements. We prioritize evidence collection, risk treatment, and sustainable processes—not checkbox paperwork alone.</p>
+            <p><a href="services.html#contact">Contact us</a> to discuss scope, timelines, and how compliance consultancy fits alongside our training and mentoring services.</p>
+        </div>
+    </main>
 
-    <p>Common areas include SOC 2, ISO 27001, GDPR, and other standards relevant to your industry. <a href="services.html#contact">Contact us</a> to discuss your compliance needs.</p>
-
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div class="site-footer__brand">
+                <a href="index.html"><img class="logo__image" src="images/logo.webp" alt="Cybersecurity Academy"></a>
+                <p>Practical compliance support for security and GRC teams.</p>
+            </div>
+            <div>
+                <h3>Quick links</h3>
+                <nav class="site-footer__links" aria-label="Footer">
+                    <a href="services.html">Services</a>
+                    <a href="education.html">Education</a>
+                    <a href="products.html">Products</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <nav class="site-footer__links">
+                    <a href="mailto:contact@csacademy.com">contact@csacademy.com</a>
+                </nav>
+            </div>
+        </div>
+        <p class="site-footer__bottom">© Cybersecurity Academy. All rights reserved.</p>
+    </footer>
 </body>
 </html>
