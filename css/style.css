@@ -755,6 +755,110 @@ img {
     text-align: center;
 }
 
+/* ——— Stock imagery (inner pages) ——— */
+.page-banner {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1f2937;
+    margin-bottom: 32px;
+    aspect-ratio: 21 / 9;
+    max-height: 300px;
+    background: rgb(13, 16, 19);
+}
+
+.page-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.media-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 0 40px;
+}
+
+.media-strip--2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.media-strip__item {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #1f2937;
+    aspect-ratio: 4 / 3;
+    background: rgb(13, 16, 19);
+}
+
+.media-strip__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.media-strip__caption {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+    background: rgba(8, 16, 36, 0.9);
+    border-top: 1px solid #1f2937;
+}
+
+.figure-inline {
+    margin: 0 0 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #1f2937;
+    background: rgb(13, 16, 19);
+}
+
+.figure-inline img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-height: 260px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.figure-inline figcaption {
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(8, 16, 36, 0.95);
+}
+
+.card--with-photo {
+    padding: 0;
+    overflow: hidden;
+}
+
+.card--with-photo .card__photo {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: rgb(13, 16, 19);
+}
+
+.card--with-photo .card__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card--with-photo .card__body {
+    padding: 22px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 /* Media */
 @media (max-width: 650px) {
     .site-header__inner {
@@ -769,5 +873,10 @@ img {
     .promo-strip {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .media-strip,
+    .media-strip--2 {
+        grid-template-columns: 1fr;
     }
 }
