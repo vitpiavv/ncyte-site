@@ -1,4 +1,4 @@
-/* Cybersecurity Academy — layout inspired by professional cert org patterns (e.g. isc2.org); color scheme unchanged */
+/* Cyber Training Academy — layout inspired by professional cert org patterns (e.g. isc2.org); color scheme unchanged */
 
 *,
 *::before,
@@ -333,6 +333,23 @@ img {
 
 .site-main--narrow {
     max-width: 880px;
+}
+
+/* Align heading, banner, and prose to one column (banner was wider than text before) */
+.site-main--narrow .section-head {
+    max-width: none;
+}
+
+.site-main--narrow .prose {
+    max-width: none;
+}
+
+.site-main--narrow .page-banner,
+.site-main--narrow .figure-inline {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
 }
 
 .section-label {
